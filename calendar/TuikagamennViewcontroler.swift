@@ -26,12 +26,14 @@ class TuikagamennViewcontroler: UIViewController {
         content.title = kadai + "をやりましょう"
         content.body = kadai + "の提出期限は" + String(describing: deadlineDate) + "です"
         let timeInterval: TimeInterval = notificationDate.timeIntervalSinceNow
-        let trigger: UNTimeIntervalNotificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: true)
+        let trigger: UNTimeIntervalNotificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
         
         let request: UNNotificationRequest = UNNotificationRequest(identifier: kadai, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 }
+
+ 
     
     
 
