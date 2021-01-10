@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "課題"; ObjectID = "19u-OU-Tou"; */
+"19u-OU-Tou.text" = "課題";
+
+/* Class = "UILabel"; text = "何時に通知"; ObjectID = "7CC-ln-RsK"; */
+"7CC-ln-RsK.text" = "何時に通知";
+
+/* Class = "UILabel"; text = "提出期限"; ObjectID = "I4k-ZH-UxX"; */
+"I4k-ZH-UxX.text" = "提出期限";

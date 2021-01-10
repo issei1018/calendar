@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0362FDE1BBF9162097DCCCF8 /* Pods_calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1AE65B1263A02C045978C04 /* Pods_calendar.framework */; };
+		2E8A2A1DE65BD223F5F99373 /* Pods_calendar_calendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D85C55BD9C13C4BA84CF5 /* Pods_calendar_calendarUITests.framework */; };
 		805781182557CAAD00B7806A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805781172557CAAD00B7806A /* AppDelegate.swift */; };
 		8057811A2557CAAD00B7806A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805781192557CAAD00B7806A /* SceneDelegate.swift */; };
 		8057811C2557CAAD00B7806A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057811B2557CAAD00B7806A /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		805781242557CAB000B7806A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805781222557CAB000B7806A /* LaunchScreen.storyboard */; };
 		8057812F2557CAB000B7806A /* calendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057812E2557CAB000B7806A /* calendarTests.swift */; };
 		8057813A2557CAB000B7806A /* calendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805781392557CAB000B7806A /* calendarUITests.swift */; };
+		808017E0258EF1C90049C95B /* Calendar-Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */; };
+		808017E5258EF7370049C95B /* TuikagamennViewcontroler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */; };
+		AE7045A0578A1E5DB625E5D2 /* Pods_calendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6F697DC4DFDB6205AB924 /* Pods_calendarTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1826E1DF60AE7D2C8320F5F7 /* Pods-calendar-calendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendar-calendarUITests.release.xcconfig"; path = "Target Support Files/Pods-calendar-calendarUITests/Pods-calendar-calendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1AF6F697DC4DFDB6205AB924 /* Pods_calendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6AA4248A73DEC3A17321D3 /* Pods-calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendar.release.xcconfig"; path = "Target Support Files/Pods-calendar/Pods-calendar.release.xcconfig"; sourceTree = "<group>"; };
+		6DEF6611B4C65E86FF78345D /* Pods-calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendar.debug.xcconfig"; path = "Target Support Files/Pods-calendar/Pods-calendar.debug.xcconfig"; sourceTree = "<group>"; };
 		805781142557CAAD00B7806A /* calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		805781172557CAAD00B7806A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		805781192557CAAD00B7806A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		805781352557CAB000B7806A /* calendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		805781392557CAB000B7806A /* calendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarUITests.swift; sourceTree = "<group>"; };
 		8057813B2557CAB000B7806A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar-Viewcontroller.swift"; sourceTree = "<group>"; };
+		808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuikagamennViewcontroler.swift; sourceTree = "<group>"; };
+		80823ED9256A4138007F4EAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		80823EDA256A4138007F4EAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AB4EA8B51299CCC197C2DCB8 /* Pods-calendar-calendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendar-calendarUITests.debug.xcconfig"; path = "Target Support Files/Pods-calendar-calendarUITests/Pods-calendar-calendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A7432343FD65E0056C898A /* Pods-calendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendarTests.debug.xcconfig"; path = "Target Support Files/Pods-calendarTests/Pods-calendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1AE65B1263A02C045978C04 /* Pods_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2D85C55BD9C13C4BA84CF5 /* Pods_calendar_calendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calendar_calendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F348911F9654116860320BE9 /* Pods-calendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calendarTests.release.xcconfig"; path = "Target Support Files/Pods-calendarTests/Pods-calendarTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0362FDE1BBF9162097DCCCF8 /* Pods_calendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7045A0578A1E5DB625E5D2 /* Pods_calendarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8A2A1DE65BD223F5F99373 /* Pods_calendar_calendarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0213043A349C4DE6D1BC0498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DEF6611B4C65E86FF78345D /* Pods-calendar.debug.xcconfig */,
+				4D6AA4248A73DEC3A17321D3 /* Pods-calendar.release.xcconfig */,
+				AB4EA8B51299CCC197C2DCB8 /* Pods-calendar-calendarUITests.debug.xcconfig */,
+				1826E1DF60AE7D2C8320F5F7 /* Pods-calendar-calendarUITests.release.xcconfig */,
+				C4A7432343FD65E0056C898A /* Pods-calendarTests.debug.xcconfig */,
+				F348911F9654116860320BE9 /* Pods-calendarTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		22231E57C4D7AE256D29188D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1AE65B1263A02C045978C04 /* Pods_calendar.framework */,
+				DB2D85C55BD9C13C4BA84CF5 /* Pods_calendar_calendarUITests.framework */,
+				1AF6F697DC4DFDB6205AB924 /* Pods_calendarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8057810B2557CAAD00B7806A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				8057812D2557CAB000B7806A /* calendarTests */,
 				805781382557CAB000B7806A /* calendarUITests */,
 				805781152557CAAD00B7806A /* Products */,
+				0213043A349C4DE6D1BC0498 /* Pods */,
+				22231E57C4D7AE256D29188D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +152,8 @@
 				805781202557CAB000B7806A /* Assets.xcassets */,
 				805781222557CAB000B7806A /* LaunchScreen.storyboard */,
 				805781252557CAB000B7806A /* Info.plist */,
+				808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */,
+				808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */,
 			);
 			path = calendar;
 			sourceTree = "<group>";
@@ -135,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8057813E2557CAB000B7806A /* Build configuration list for PBXNativeTarget "calendar" */;
 			buildPhases = (
+				93ADAFF5541530F7D4836A82 /* [CP] Check Pods Manifest.lock */,
 				805781102557CAAD00B7806A /* Sources */,
 				805781112557CAAD00B7806A /* Frameworks */,
 				805781122557CAAD00B7806A /* Resources */,
+				C2644D446C980A8AC647355E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 805781412557CAB000B7806A /* Build configuration list for PBXNativeTarget "calendarTests" */;
 			buildPhases = (
+				FFE4A97A97C84324A270FB1E /* [CP] Check Pods Manifest.lock */,
 				805781262557CAB000B7806A /* Sources */,
 				805781272557CAB000B7806A /* Frameworks */,
 				805781282557CAB000B7806A /* Resources */,
@@ -170,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 805781442557CAB000B7806A /* Build configuration list for PBXNativeTarget "calendarUITests" */;
 			buildPhases = (
+				1672BCBDEDC71902799EEC53 /* [CP] Check Pods Manifest.lock */,
 				805781312557CAB000B7806A /* Sources */,
 				805781322557CAB000B7806A /* Frameworks */,
 				805781332557CAB000B7806A /* Resources */,
+				9602C468CF4056B5B54EF3CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 8057810B2557CAAD00B7806A;
 			productRefGroup = 805781152557CAAD00B7806A /* Products */;
@@ -253,6 +307,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1672BCBDEDC71902799EEC53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calendar-calendarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93ADAFF5541530F7D4836A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9602C468CF4056B5B54EF3CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calendar-calendarUITests/Pods-calendar-calendarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calendar-calendarUITests/Pods-calendar-calendarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calendar-calendarUITests/Pods-calendar-calendarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2644D446C980A8AC647355E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calendar/Pods-calendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-calendar/Pods-calendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-calendar/Pods-calendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFE4A97A97C84324A270FB1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-calendarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		805781102557CAAD00B7806A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +417,9 @@
 			files = (
 				8057811C2557CAAD00B7806A /* ViewController.swift in Sources */,
 				805781182557CAAD00B7806A /* AppDelegate.swift in Sources */,
+				808017E0258EF1C90049C95B /* Calendar-Viewcontroller.swift in Sources */,
 				8057811A2557CAAD00B7806A /* SceneDelegate.swift in Sources */,
+				808017E5258EF7370049C95B /* TuikagamennViewcontroler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +459,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8057811E2557CAAD00B7806A /* Base */,
+				80823ED9256A4138007F4EAA /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +468,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				805781232557CAB000B7806A /* Base */,
+				80823EDA256A4138007F4EAA /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -433,6 +596,7 @@
 		};
 		8057813F2557CAB000B7806A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEF6611B4C65E86FF78345D /* Pods-calendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +615,7 @@
 		};
 		805781402557CAB000B7806A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6AA4248A73DEC3A17321D3 /* Pods-calendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +634,7 @@
 		};
 		805781422557CAB000B7806A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A7432343FD65E0056C898A /* Pods-calendarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +656,7 @@
 		};
 		805781432557CAB000B7806A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F348911F9654116860320BE9 /* Pods-calendarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +678,7 @@
 		};
 		805781452557CAB000B7806A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4EA8B51299CCC197C2DCB8 /* Pods-calendar-calendarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +698,7 @@
 		};
 		805781462557CAB000B7806A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1826E1DF60AE7D2C8320F5F7 /* Pods-calendar-calendarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
