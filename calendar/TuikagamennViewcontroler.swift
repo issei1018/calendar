@@ -33,6 +33,9 @@ class TuikagamennViewcontroler: UIViewController {
     }
 }
 
+
+
+
  
     
     
