@@ -9,14 +9,15 @@ import UIKit
 import  UserNotifications
     
 class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableViewDataSource {
-    
+    @IBOutlet var tableView  : UITableView!
     var array :[UNNotificationRequest] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell",for:indexPath)
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier:
+                                                                    "table view cell",for:indexPath)
         
         cell .textLabel!.text = array[indexPath.row].content.title
     return cell
@@ -53,12 +54,15 @@ class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableV
             print("----------------")
             
         }
-        
+            DispatchQueue.main.async {
+            self.tableView.reloadData()
         
     }
 }
 }
-    
+}
+
+
     
     
     
@@ -76,7 +80,6 @@ class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableV
  // Get the new view controller using segue.destination.
  // Pass the selected object to the new view controller.
  */
-
 
 
 
