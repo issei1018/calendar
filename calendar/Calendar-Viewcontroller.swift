@@ -7,8 +7,9 @@
 
 import UIKit
 import  UserNotifications
-    
-class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableViewDataSource {
+import FSCalendar
+
+class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate,FSCalendarDelegate, UITableViewDataSource {
     @IBOutlet var tableView  : UITableView!
     var array :[UNNotificationRequest] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -20,7 +21,7 @@ class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableV
                                                                     "table view cell",for:indexPath)
         
         cell .textLabel!.text = array[indexPath.row].content.title
-    return cell
+        return cell
     }
     
     let dateFormatter = DateFormatter()
@@ -35,39 +36,44 @@ class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate, UITableV
         let center = UNUserNotificationCenter.current()
         center.getPendingNotificationRequests { (requests: [UNNotificationRequest]) in
             self.array = requests
-        for request in requests {
-            print ("identifier:\(request.identifier)")
-            print ("  title:\(request.content.title)")
-            
-            if request.trigger is UNCalendarNotificationTrigger {
-                let trigger = request.trigger as! UNCalendarNotificationTrigger
-                print("<CalendarNotification>")
-                let components = DateComponents(calendar: Calendar.current, year: trigger.dateComponents.year, month: trigger.dateComponents.month, day: trigger.dateComponents.day, hour: trigger.dateComponents.hour,minute: trigger.dateComponents.minute)
-                print(" Scheduled Date:\(self.dateFormatter.string(from: components.date!))")
-                print(" Reperts:\(trigger.repeats)")
-            } else if request.trigger is UNTimeIntervalNotificationTrigger {
-                let trigger = request.trigger as! UNTimeIntervalNotificationTrigger
-                print(" <TimeIntervalNotification>")
-                print(" TimeInterval:\(trigger.timeInterval)")
-                print(" Reperts:\(trigger.repeats)")
+            for request in requests {
+                print ("identifier:\(request.identifier)")
+                print ("  title:\(request.content.title)")
+                
+                if request.trigger is UNCalendarNotificationTrigger {
+                    let trigger = request.trigger as! UNCalendarNotificationTrigger
+                    print("<CalendarNotification>")
+                    let components = DateComponents(calendar: Calendar.current, year: trigger.dateComponents.year, month: trigger.dateComponents.month, day: trigger.dateComponents.day, hour: trigger.dateComponents.hour,minute: trigger.dateComponents.minute)
+                    print(" Scheduled Date:\(self.dateFormatter.string(from: components.date!))")
+                    print(" Reperts:\(trigger.repeats)")
+                } else if request.trigger is UNTimeIntervalNotificationTrigger {
+                    let trigger = request.trigger as! UNTimeIntervalNotificationTrigger
+                    print(" <TimeIntervalNotification>")
+                    print(" TimeInterval:\(trigger.timeInterval)")
+                    print(" Reperts:\(trigger.repeats)")
                 }
-            print("----------------")
-            
-        }
+                print("----------------")
+                
+            }
             DispatchQueue.main.async {
-            self.tableView.reloadData()
-        
+                self.tableView.reloadData()
+                
+            }
+        }
     }
-}
-}
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+     
+    }
+   
 }
 
 
-    
-    
-    
-    
-    // Do any additional setup after loading the view.
+
+
+
+
+
+// Do any additional setup after loading the view.
 
 
 

@@ -19,6 +19,7 @@ class TuikagamennViewcontroler: UIViewController {
 
     }
     @IBAction func save() {
+        
         let kadai: String = kadaiTextField.text!
         let notificationDate: Date = notificationDatePicker.date
         let deadlineDate: Date = deadlineDatePicker.date
@@ -30,6 +31,7 @@ class TuikagamennViewcontroler: UIViewController {
         
         let request: UNNotificationRequest = UNNotificationRequest(identifier: kadai, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

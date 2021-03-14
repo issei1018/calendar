@@ -19,6 +19,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMn-8b-ghC" customClass="FSCalendar">
                                 <rect key="frame" x="20" y="74" width="280" height="194"/>
                                 <color key="backgroundColor" red="0.78711932900000003" green="0.84249705080000004" blue="0.55289107559999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="AF6-HV-0d5"/>
+                                </connections>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-ZZ-IPy">
                                 <rect key="frame" x="0.0" y="268" width="320" height="300"/>
