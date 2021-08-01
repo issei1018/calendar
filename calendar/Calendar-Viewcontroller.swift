@@ -19,10 +19,21 @@ class Calendar_Viewcontroller: UIViewController ,  UITableViewDelegate,FSCalenda
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier:
                                                                     "table view cell",for:indexPath)
-        
         cell .textLabel!.text = array[indexPath.row].content.title
+        
+        let trigger = array[indexPath.row].trigger as! UNTimeIntervalNotificationTrigger
+        
+        // DateFormatterを作成
+        let formatter: DateFormatter = DateFormatter()
+        // dateFormatを設定することで、決まった形式で時刻を文字列に変えることができる
+        formatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "ydMMM", options: 0, locale: Locale(identifier: "ja_JP"))
+        // 作ったformatをもとに時刻を文字列に変換するコード
+        let dateString: String = formatter.string(from: trigger.nextTriggerDate()!)
+        
+        cell.detailTextLabel?.text = dateString
         return cell
     }
+    
     
     let dateFormatter = DateFormatter()
     override func viewDidLoad() {

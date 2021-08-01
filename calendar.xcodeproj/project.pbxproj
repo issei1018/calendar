@@ -17,6 +17,7 @@
 		805781242557CAB000B7806A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805781222557CAB000B7806A /* LaunchScreen.storyboard */; };
 		8057812F2557CAB000B7806A /* calendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8057812E2557CAB000B7806A /* calendarTests.swift */; };
 		8057813A2557CAB000B7806A /* calendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805781392557CAB000B7806A /* calendarUITests.swift */; };
+		807F3BA5267F03D4005D008C /* rirekigamenn-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F3BA4267F03D4005D008C /* rirekigamenn-ViewController.swift */; };
 		808017E0258EF1C90049C95B /* Calendar-Viewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */; };
 		808017E5258EF7370049C95B /* TuikagamennViewcontroler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */; };
 		AE7045A0578A1E5DB625E5D2 /* Pods_calendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF6F697DC4DFDB6205AB924 /* Pods_calendarTests.framework */; };
@@ -58,6 +59,7 @@
 		805781352557CAB000B7806A /* calendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		805781392557CAB000B7806A /* calendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarUITests.swift; sourceTree = "<group>"; };
 		8057813B2557CAB000B7806A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		807F3BA4267F03D4005D008C /* rirekigamenn-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rirekigamenn-ViewController.swift"; sourceTree = "<group>"; };
 		808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar-Viewcontroller.swift"; sourceTree = "<group>"; };
 		808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuikagamennViewcontroler.swift; sourceTree = "<group>"; };
 		80823ED9256A4138007F4EAA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
@@ -149,10 +151,11 @@
 				805781192557CAAD00B7806A /* SceneDelegate.swift */,
 				8057811B2557CAAD00B7806A /* ViewController.swift */,
 				8057811D2557CAAD00B7806A /* Main.storyboard */,
+				807F3BA4267F03D4005D008C /* rirekigamenn-ViewController.swift */,
+				808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */,
 				805781202557CAB000B7806A /* Assets.xcassets */,
 				805781222557CAB000B7806A /* LaunchScreen.storyboard */,
 				805781252557CAB000B7806A /* Info.plist */,
-				808017DF258EF1C90049C95B /* Calendar-Viewcontroller.swift */,
 				808017E4258EF7370049C95B /* TuikagamennViewcontroler.swift */,
 			);
 			path = calendar;
@@ -417,6 +420,7 @@
 			files = (
 				8057811C2557CAAD00B7806A /* ViewController.swift in Sources */,
 				805781182557CAAD00B7806A /* AppDelegate.swift in Sources */,
+				807F3BA5267F03D4005D008C /* rirekigamenn-ViewController.swift in Sources */,
 				808017E0258EF1C90049C95B /* Calendar-Viewcontroller.swift in Sources */,
 				8057811A2557CAAD00B7806A /* SceneDelegate.swift in Sources */,
 				808017E5258EF7370049C95B /* TuikagamennViewcontroler.swift in Sources */,
